@@ -37,12 +37,12 @@ func requestURLComponent() -> URLComponents {
 /// Main class for http requests
 class HTTPRequest {
     
-    func FeedList(mediaType: MediaType, feedType:iTunesMusic, completion: ((Result<HTTPMusicResponse,Error>) -> Void)?) {
+    func FeedList(mediaType: MediaType, completion: ((Result<HTTPMusicResponse,Error>) -> Void)?) {
         
         let session = URLSession.shared
         
         var urlComponent = requestURLComponent()
-        urlComponent.path.append("\(mediaType.rawValue)/\(feedType.rawValue)")
+        urlComponent.path.append("\(mediaType.rawValue)/\(mediaType.feedType())")
         
         urlComponent.path.append("/all/10/explicit.json")
         

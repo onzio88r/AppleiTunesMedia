@@ -12,11 +12,11 @@ import UIKit
 extension TableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return mediaTypeRequested.label()
+        return "\(mediaTypeRequested.label()) - \(mediaTypeRequested.feedLabel())"
     }
     
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "Media Type \(mainFeedResult?.copyright ?? "")"
+        return "\(mainFeedResult?.copyright ?? "")"
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -23,6 +23,8 @@
 		0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761423C63AFB0067930C /* TableView+DataSource.swift */; };
 		0871761823C63F810067930C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761723C63F810067930C /* FeedTableViewCell.swift */; };
 		0871761A23C644BB0067930C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761923C644BB0067930C /* UIView+Extension.swift */; };
+		0871762023C64F940067930C /* TableView+PickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761F23C64F940067930C /* TableView+PickerDelegate.swift */; };
+		0871762223C64FE90067930C /* TableView+PickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871762123C64FE90067930C /* TableView+PickerDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		0871761423C63AFB0067930C /* TableView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+DataSource.swift"; sourceTree = "<group>"; };
 		0871761723C63F810067930C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		0871761923C644BB0067930C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0871761F23C64F940067930C /* TableView+PickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+PickerDelegate.swift"; sourceTree = "<group>"; };
+		0871762123C64FE90067930C /* TableView+PickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+PickerDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				0871761B23C645440067930C /* Resources */,
 				0871760423C62C110067930C /* HTTP */,
 				087175D123C6259C0067930C /* AppDelegate.swift */,
+				0871761E23C64EFD0067930C /* MediaPicker */,
 				087175D323C6259C0067930C /* SceneDelegate.swift */,
 				0871761123C63A880067930C /* Table View */,
 				087175D723C6259C0067930C /* Main.storyboard */,
@@ -198,6 +203,15 @@
 				0871761923C644BB0067930C /* UIView+Extension.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0871761E23C64EFD0067930C /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0871761F23C64F940067930C /* TableView+PickerDelegate.swift */,
+				0871762123C64FE90067930C /* TableView+PickerDataSource.swift */,
+			);
+			path = MediaPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,10 +349,12 @@
 				0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */,
 				0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */,
 				087175D223C6259C0067930C /* AppDelegate.swift in Sources */,
+				0871762223C64FE90067930C /* TableView+PickerDataSource.swift in Sources */,
 				0871760C23C630B70067930C /* HTTPMusicResponse+Struct.swift in Sources */,
 				0871761323C63AB90067930C /* TableView+Delegate.swift in Sources */,
 				0871761023C6384B0067930C /* TableViewController.swift in Sources */,
 				087175D423C6259C0067930C /* SceneDelegate.swift in Sources */,
+				0871762023C64F940067930C /* TableView+PickerDelegate.swift in Sources */,
 				087175DC23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld in Sources */,
 				0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */,
 				0871761823C63F810067930C /* FeedTableViewCell.swift in Sources */,
