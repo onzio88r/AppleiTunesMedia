@@ -17,7 +17,7 @@ class TableViewController: UIViewController {
     fileprivate let tableView: UITableView = {
         
         let tv = UITableView(frame: .zero)
-        tv.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tv.register(FeedTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
         return tv
     }()

@@ -11,6 +11,10 @@ import UIKit
 
 extension TableViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -20,10 +24,9 @@ extension TableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+          let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FeedTableViewCell
 
-        cell.textLabel?.text = feedResults[indexPath.row].name
-        cell.detailTextLabel?.text = feedResults[indexPath.row].name
+        cell.feed = feedResults[indexPath.row]
         
         return cell
       }

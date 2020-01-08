@@ -21,6 +21,8 @@
 		0871761023C6384B0067930C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760F23C6384B0067930C /* TableViewController.swift */; };
 		0871761323C63AB90067930C /* TableView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761223C63AB90067930C /* TableView+Delegate.swift */; };
 		0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761423C63AFB0067930C /* TableView+DataSource.swift */; };
+		0871761823C63F810067930C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761723C63F810067930C /* FeedTableViewCell.swift */; };
+		0871761A23C644BB0067930C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761923C644BB0067930C /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0871760F23C6384B0067930C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0871761223C63AB90067930C /* TableView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Delegate.swift"; sourceTree = "<group>"; };
 		0871761423C63AFB0067930C /* TableView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+DataSource.swift"; sourceTree = "<group>"; };
+		0871761723C63F810067930C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		0871761923C644BB0067930C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		087175D023C6259C0067930C /* AppleiTunesMedia */ = {
 			isa = PBXGroup;
 			children = (
+				0871761B23C645440067930C /* Resources */,
 				0871760423C62C110067930C /* HTTP */,
 				087175D123C6259C0067930C /* AppDelegate.swift */,
 				087175D323C6259C0067930C /* SceneDelegate.swift */,
@@ -171,11 +176,28 @@
 		0871761123C63A880067930C /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				0871761623C63F6B0067930C /* Cell */,
 				0871760F23C6384B0067930C /* TableViewController.swift */,
 				0871761423C63AFB0067930C /* TableView+DataSource.swift */,
 				0871761223C63AB90067930C /* TableView+Delegate.swift */,
 			);
 			path = "Table View";
+			sourceTree = "<group>";
+		};
+		0871761623C63F6B0067930C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0871761723C63F810067930C /* FeedTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0871761B23C645440067930C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0871761923C644BB0067930C /* UIView+Extension.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0871761A23C644BB0067930C /* UIView+Extension.swift in Sources */,
 				0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */,
 				0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */,
 				087175D223C6259C0067930C /* AppDelegate.swift in Sources */,
@@ -318,6 +341,7 @@
 				087175D423C6259C0067930C /* SceneDelegate.swift in Sources */,
 				087175DC23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld in Sources */,
 				0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */,
+				0871761823C63F810067930C /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
