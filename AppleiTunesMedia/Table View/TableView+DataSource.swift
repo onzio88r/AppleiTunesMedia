@@ -11,6 +11,14 @@ import UIKit
 
 extension TableViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return mediaTypeRequested.label()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Media Type \(mainFeedResult?.copyright ?? "")"
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }

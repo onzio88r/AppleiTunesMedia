@@ -27,6 +27,22 @@ class TableViewController: UIViewController {
             tableView.reloadData()
         }
     }
+    
+    var mainFeedResult:Feed?
+    
+    var mediaTypeRequested = MediaType.iTunesMusic {
+        didSet {
+            httpRequestManager.FeedList(mediaType: .iTunesMusic, feedType: .HotTracks) { ( response ) in
+                switch response {
+                case .failure(let error) :
+                    NSLog(error.localizedDescription)
+                case .success(let result):
+                    self.mainFeedResult = result.feed
+                    self.feedResults = result.feed.results
+                }
+            }
+        }
+    }
 
 }
 
@@ -61,14 +77,7 @@ extension TableViewController {
     }
     
     private func loadFirstData(){
-        httpRequestManager.FeedList(mediaType: .iTunesMusic, feedType: .HotTracks) { ( response ) in
-            switch response {
-            case .failure(let error) :
-                NSLog(error.localizedDescription)
-            case .success(let result):
-                self.feedResults = result.feed.results
-            }
-        }
+        mediaTypeRequested = MediaType.iTunesMusic
     }
     
 

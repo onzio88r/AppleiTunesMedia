@@ -9,8 +9,19 @@
 import Foundation
 
 enum MediaType: String {
-    case iTunesMusic    = "itunes-music"
+     case iTunesMusic   = "itunes-music"
     case iOSApps        = "ios-apps"
+    
+    /// Wi'll return the description label of the media type
+    /// it is possible in multiple, easy and different way but for a quick code i decided for this implementation
+    func label() -> String {
+        switch self {
+        case .iOSApps:
+            return "iOS Apps"
+        case .iTunesMusic:
+            return "iTunes Music"
+        }
+    }
 }
 
 enum iTunesMusic: String {
