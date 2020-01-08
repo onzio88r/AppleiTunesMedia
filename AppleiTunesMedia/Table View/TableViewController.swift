@@ -8,14 +8,16 @@
 
 import UIKit
 
+//MARK: - Cell identifier
+
 let cellIdentifier = "cell"
 
 class TableViewController: UIViewController {
-
+    
+//MARK: - Class objects declaration
     
     /// Class object to manage the http request
     private let httpRequestManager = HTTPRequest()
-    
     
     /// Type of media available from the picker selection
     var mediaTypeAvailable = [MediaType.iTunesMusic, MediaType.iOSApps]
@@ -66,6 +68,7 @@ class TableViewController: UIViewController {
 
 }
 
+//MARK: - View implementation
 
 extension TableViewController {
     
@@ -94,6 +97,7 @@ extension TableViewController {
 
     }
     
+  //MARK: - Constraints
     
     /// Making contraint for picker and table below
     private func makeConstraints(){
@@ -110,6 +114,7 @@ extension TableViewController {
         tableView.bottomAnchor.constraint(equalToSystemSpacingBelow: margin.bottomAnchor, multiplier: 1.0).isActive = true
     }
     
+    //MARK: - Loda data
     
     /// loading the first data for the table
     private func loadFirstData(){
