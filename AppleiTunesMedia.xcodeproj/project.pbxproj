@@ -18,7 +18,9 @@
 		0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760523C62C2F0067930C /* HTTPRequestManager.swift */; };
 		0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760723C62D8E0067930C /* HTTPRequest+Enum.swift */; };
 		0871760C23C630B70067930C /* HTTPMusicResponse+Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */; };
-		0871760E23C6370A0067930C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760D23C6370A0067930C /* TableViewController.swift */; };
+		0871761023C6384B0067930C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760F23C6384B0067930C /* TableViewController.swift */; };
+		0871761323C63AB90067930C /* TableView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761223C63AB90067930C /* TableView+Delegate.swift */; };
+		0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871761423C63AFB0067930C /* TableView+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,9 @@
 		0871760523C62C2F0067930C /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		0871760723C62D8E0067930C /* HTTPRequest+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Enum.swift"; sourceTree = "<group>"; };
 		0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMusicResponse+Struct.swift"; sourceTree = "<group>"; };
-		0871760D23C6370A0067930C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0871760F23C6384B0067930C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0871761223C63AB90067930C /* TableView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Delegate.swift"; sourceTree = "<group>"; };
+		0871761423C63AFB0067930C /* TableView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,7 @@
 				0871760423C62C110067930C /* HTTP */,
 				087175D123C6259C0067930C /* AppDelegate.swift */,
 				087175D323C6259C0067930C /* SceneDelegate.swift */,
-				0871760D23C6370A0067930C /* TableViewController.swift */,
+				0871761123C63A880067930C /* Table View */,
 				087175D723C6259C0067930C /* Main.storyboard */,
 				087175DD23C6259E0067930C /* Assets.xcassets */,
 				087175DF23C6259E0067930C /* LaunchScreen.storyboard */,
@@ -162,6 +166,16 @@
 				0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		0871761123C63A880067930C /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				0871760F23C6384B0067930C /* TableViewController.swift */,
+				0871761423C63AFB0067930C /* TableView+DataSource.swift */,
+				0871761223C63AB90067930C /* TableView+Delegate.swift */,
+			);
+			path = "Table View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,12 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */,
-				0871760E23C6370A0067930C /* TableViewController.swift in Sources */,
 				0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */,
 				087175D223C6259C0067930C /* AppDelegate.swift in Sources */,
 				0871760C23C630B70067930C /* HTTPMusicResponse+Struct.swift in Sources */,
+				0871761323C63AB90067930C /* TableView+Delegate.swift in Sources */,
+				0871761023C6384B0067930C /* TableViewController.swift in Sources */,
 				087175D423C6259C0067930C /* SceneDelegate.swift in Sources */,
 				087175DC23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld in Sources */,
+				0871761523C63AFB0067930C /* TableView+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

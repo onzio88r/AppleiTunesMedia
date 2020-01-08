@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                let nav1 = UINavigationController()
                    nav1.view.backgroundColor = .white
                
-               let mainView = ViewController(nibName: nil, bundle: nil)
+               let mainView = TableViewController(nibName: nil, bundle: nil)
                nav1.viewControllers = [mainView]
                self.window!.rootViewController = nav1
                self.window?.makeKeyAndVisible()
