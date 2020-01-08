@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		087175D223C6259C0067930C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087175D123C6259C0067930C /* AppDelegate.swift */; };
 		087175D423C6259C0067930C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087175D323C6259C0067930C /* SceneDelegate.swift */; };
-		087175D623C6259C0067930C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087175D523C6259C0067930C /* ViewController.swift */; };
 		087175D923C6259C0067930C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087175D723C6259C0067930C /* Main.storyboard */; };
 		087175DC23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 087175DA23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld */; };
 		087175DE23C6259E0067930C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087175DD23C6259E0067930C /* Assets.xcassets */; };
 		087175E123C6259E0067930C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087175DF23C6259E0067930C /* LaunchScreen.storyboard */; };
 		087175EC23C6259E0067930C /* AppleiTunesMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087175EB23C6259E0067930C /* AppleiTunesMediaTests.swift */; };
 		087175F723C6259E0067930C /* AppleiTunesMediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087175F623C6259E0067930C /* AppleiTunesMediaUITests.swift */; };
+		0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760523C62C2F0067930C /* HTTPRequestManager.swift */; };
+		0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760723C62D8E0067930C /* HTTPRequest+Enum.swift */; };
+		0871760C23C630B70067930C /* HTTPMusicResponse+Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */; };
+		0871760E23C6370A0067930C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871760D23C6370A0067930C /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		087175CE23C6259C0067930C /* AppleiTunesMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleiTunesMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		087175D123C6259C0067930C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		087175D323C6259C0067930C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		087175D523C6259C0067930C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		087175D823C6259C0067930C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		087175DB23C6259C0067930C /* AppleiTunesMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleiTunesMedia.xcdatamodel; sourceTree = "<group>"; };
 		087175DD23C6259E0067930C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		087175F223C6259E0067930C /* AppleiTunesMediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleiTunesMediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		087175F623C6259E0067930C /* AppleiTunesMediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleiTunesMediaUITests.swift; sourceTree = "<group>"; };
 		087175F823C6259E0067930C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0871760523C62C2F0067930C /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		0871760723C62D8E0067930C /* HTTPRequest+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Enum.swift"; sourceTree = "<group>"; };
+		0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMusicResponse+Struct.swift"; sourceTree = "<group>"; };
+		0871760D23C6370A0067930C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,10 @@
 		087175D023C6259C0067930C /* AppleiTunesMedia */ = {
 			isa = PBXGroup;
 			children = (
+				0871760423C62C110067930C /* HTTP */,
 				087175D123C6259C0067930C /* AppDelegate.swift */,
 				087175D323C6259C0067930C /* SceneDelegate.swift */,
-				087175D523C6259C0067930C /* ViewController.swift */,
+				0871760D23C6370A0067930C /* TableViewController.swift */,
 				087175D723C6259C0067930C /* Main.storyboard */,
 				087175DD23C6259E0067930C /* Assets.xcassets */,
 				087175DF23C6259E0067930C /* LaunchScreen.storyboard */,
@@ -129,6 +136,32 @@
 				087175F823C6259E0067930C /* Info.plist */,
 			);
 			path = AppleiTunesMediaUITests;
+			sourceTree = "<group>";
+		};
+		0871760423C62C110067930C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				0871760A23C630A10067930C /* Response */,
+				0871760923C6308F0067930C /* Request */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		0871760923C6308F0067930C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0871760523C62C2F0067930C /* HTTPRequestManager.swift */,
+				0871760723C62D8E0067930C /* HTTPRequest+Enum.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0871760A23C630A10067930C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				0871760B23C630B70067930C /* HTTPMusicResponse+Struct.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				087175D623C6259C0067930C /* ViewController.swift in Sources */,
+				0871760623C62C2F0067930C /* HTTPRequestManager.swift in Sources */,
+				0871760E23C6370A0067930C /* TableViewController.swift in Sources */,
+				0871760823C62D8E0067930C /* HTTPRequest+Enum.swift in Sources */,
 				087175D223C6259C0067930C /* AppDelegate.swift in Sources */,
+				0871760C23C630B70067930C /* HTTPMusicResponse+Struct.swift in Sources */,
 				087175D423C6259C0067930C /* SceneDelegate.swift in Sources */,
 				087175DC23C6259C0067930C /* AppleiTunesMedia.xcdatamodeld in Sources */,
 			);

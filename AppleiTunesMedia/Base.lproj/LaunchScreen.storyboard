@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,88 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ITunesLogo" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-zY-liT">
+                                <rect key="frame" x="176" y="64" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="BCA-tX-8CZ"/>
+                                    <constraint firstAttribute="height" constant="62" id="UVO-qo-6BW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbM-7O-jiy">
+                                <rect key="frame" x="116" y="147" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="a5A-kW-Pas"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="by">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Daniele Rapali">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtF-hn-CVy">
+                                <rect key="frame" x="116" y="170" width="182" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="B2o-SR-lFg"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="for">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="genuisLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PvA-cG-zsO">
+                                <rect key="frame" x="96" y="198" width="222" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="E87-ad-AX1"/>
+                                    <constraint firstAttribute="height" constant="76" id="K5u-g6-oXy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eJh-zY-liT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="04f-K0-8a3"/>
+                            <constraint firstItem="BtF-hn-CVy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Yz-WD-rZe"/>
+                            <constraint firstItem="RbM-7O-jiy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DrP-yq-v0i"/>
+                            <constraint firstItem="BtF-hn-CVy" firstAttribute="top" secondItem="RbM-7O-jiy" secondAttribute="bottom" constant="2" id="Ihp-ho-elP"/>
+                            <constraint firstItem="RbM-7O-jiy" firstAttribute="top" secondItem="eJh-zY-liT" secondAttribute="bottom" constant="21" id="LpC-HG-JH2"/>
+                            <constraint firstItem="PvA-cG-zsO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="biQ-nz-5tb"/>
+                            <constraint firstItem="eJh-zY-liT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lNB-eb-MRG"/>
+                            <constraint firstItem="PvA-cG-zsO" firstAttribute="top" secondItem="BtF-hn-CVy" secondAttribute="bottom" constant="8" id="tct-2A-Rzl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ITunesLogo" width="438" height="440"/>
+        <image name="genuisLogo" width="646" height="223"/>
+    </resources>
 </document>
